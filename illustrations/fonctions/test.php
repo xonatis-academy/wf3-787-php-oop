@@ -2,12 +2,11 @@
 
 include __DIR__.'/functions.php';
 
-$texte = 3;
+$texte = 'bonjour comment ca va ?';
 
-$caca = ajouter2($texte);
-$toto = ajouter3($caca);
+$resultat = substr($texte, 8, 2);
 
-var_dump($toto);
+var_dump($resultat);
 
 ?>
 
