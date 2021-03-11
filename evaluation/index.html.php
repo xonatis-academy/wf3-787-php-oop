@@ -7,61 +7,50 @@
 </head>
 
 <body>
+
     <div class="container">
-        <h1 class="display-4 text-center">Gestion des produits</h1>
+        <h1 class="display-4 text-center">Liste des produits</h1>
+        <a href="add.php" class="btn btn-primary">Ajouter un produit</a>
+        <table class="table table-striped w-100 mx-auto">
+            <tr>
+                <th>Nom</th>
+                <th>Prix</th>
+                <th>Image</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
 
-        <?php
-        if ($messageErreur !== null) 
-        {
-        ?>
+            <?php
+            for ($i = 0; $i < count($tableau); ++$i) {
+            ?>
 
-            <div class="alert alert-danger" role="alert">
-                <?php echo $messageErreur; ?>
-            </div>
+                <tr>
+                    <td class="w-25"><?php echo $tableau[$i]->titre ?></td>
+                    <td><?php echo $tableau[$i]->prix ?> euros</td>
+                    <td>
+                        <img class="w-100" src="<?php echo $tableau[$i]->photo ?>" />
+                    </td>
+                    <td><?php echo $tableau[$i]->type ?></td>
+                    <td><?php
+                        $taille = strlen($tableau[$i]->description);
+                        if ($taille > 25) {
+                            echo substr($tableau[$i]->description, 0, 25) . '...';
+                        } else {
+                            echo $tableau[$i]->description;
+                        }
 
-        <?php
-        }
-        ?>
+                        ?></td>
+                    <td>
+                        <a href="details.php?id=<?php echo $tableau[$i]->id ?>" class="btn btn-secondary">Details</a>
+                    </td>
+                </tr>
 
-        <form method="POST" action="index.php" enctype="multipart/form-data" class="p-5">
-            <div class="form-group">
-                <label>Titre</label>
-                <input type="text" name="logement-titre" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>Adresse</label>
-                <input type="text" name="logement-adresse" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>Ville</label>
-                <input type="text" name="logement-ville" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>Code postal</label>
-                <input type="text" name="logement-cp" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>Surface</label>
-                <input type="text" name="logement-surface" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>Prix du produit</label>
-                <input type="text" name="logement-prix" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>Photo du produit</label>
-                <input type="file" name="logement-photo-file" class="form-control-file">
-            </div>
-            <select name="logement-type">
-                <option value="location">Location</option>
-                <option value="vente">Vente</option>
-            </select>
-            <div class="form-group">
-                <label>Description du produit</label>
-                <input type="text" name="logement-description" class="form-control">
-            </div>
-            <button name="btn-valider" type="submit" class="btn btn-primary">Ajouter le produit</button>
-        </form>
+            <?php
+            }
+            ?>
+
+        </table>
 
     </div>
 

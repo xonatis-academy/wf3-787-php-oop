@@ -35,12 +35,12 @@ function verifierPayloadPourCreerProduit()
         return "Vous devez spécifier un code postal de logement";
     }
 
-    if (!is_int($_POST['logement-prix']))
+    if (!is_numeric($_POST['logement-prix']))
     {
         return "Le prix doit être un entier";
     }
 
-    if (!is_int($_POST['logement-surface']))
+    if (!is_numeric($_POST['logement-surface']))
     {
         return "La surface doit être un entier";
     }
