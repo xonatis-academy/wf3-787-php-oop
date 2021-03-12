@@ -23,7 +23,7 @@
         }
         ?>
 
-        <form method="POST" action="index.php" enctype="multipart/form-data" class="p-5">
+        <form method="POST" action="add.php" enctype="multipart/form-data" class="p-5">
             <div class="form-group">
                 <label>Titre</label>
                 <input type="text" name="logement-titre" class="form-control">
