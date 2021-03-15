@@ -1,17 +1,8 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 
-include __DIR__.'/functions.php';
-include __DIR__.'/models/Produit.php';
+include __DIR__.'/controllers/ProduitController.php';
 
-if (!isset($_GET['id']))
-{
-    die();
-}
-
-$produit = recupererUnSeulProduitAvecId($_GET['id']);
-
-include __DIR__.'/views/details.html.php';
+$controller = new ProduitController();
+$controller->get();
 
 ?>

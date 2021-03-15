@@ -16,7 +16,7 @@ include __DIR__ . '/header.html.php';
             <strong>Prix du produit :</strong>
             <?php echo $produit->prix; ?> euros
         </p>
-        <a href="index.php" class="btn btn-secondary">Retour a l'affichage</a>
+        <a href="catalog.php" class="btn btn-secondary">Retour a l'affichage</a>
     </div>
     <div class="col">
         <img class="w-100" src="<?php echo $produit->photo ?>" />

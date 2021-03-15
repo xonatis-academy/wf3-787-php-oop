@@ -55,7 +55,7 @@ if ($messageErreur !== null)
         <input type="text" name="logement-description" class="form-control">
     </div>
     <button name="btn-valider" type="submit" class="btn btn-primary">Ajouter le produit</button>
-    <a href="index.php" class="btn btn-secondary">Retour a l'affichage</a>
+    <a href="catalog.php" class="btn btn-secondary">Retour a l'affichage</a>
 </form>
 
 <?php

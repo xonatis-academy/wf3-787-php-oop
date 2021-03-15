@@ -3,6 +3,6 @@
 include __DIR__.'/controllers/ProduitController.php';
 
 $controller = new ProduitController();
-$controller->add();
+$controller->list();
 
 ?>
