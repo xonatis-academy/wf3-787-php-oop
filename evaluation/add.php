@@ -17,6 +17,6 @@ if (isset($_POST['btn-valider']))
     }
 }
 
-include __DIR__.'/add.html.php';
+include __DIR__.'/views/add.html.php';
 
 ?>

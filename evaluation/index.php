@@ -7,6 +7,6 @@ include __DIR__.'/functions.php';
 
 $tableau = recupererTousLesProduits();
 
-include __DIR__.'/index.html.php';
+include __DIR__.'/views/index.html.php';
 
 ?>

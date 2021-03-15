@@ -12,6 +12,6 @@ if (!isset($_GET['id']))
 
 $produit = recupererUnSeulProduitAvecId($_GET['id']);
 
-include __DIR__.'/details.html.php';
+include __DIR__.'/views/details.html.php';
 
 ?>

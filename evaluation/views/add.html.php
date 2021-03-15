@@ -1,5 +1,5 @@
 <?php
-    include __DIR__.'/views/header.html.php';
+    include __DIR__.'/header.html.php';
 ?>
 
 <h1 class="display-4 text-center">Gestion des produits</h1>
@@ -59,5 +59,5 @@ if ($messageErreur !== null)
 </form>
 
 <?php
-    include __DIR__.'/views/footer.html.php';
+    include __DIR__.'/footer.html.php';
 ?>

@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . '/views/header.html.php';
+include __DIR__ . '/header.html.php';
 ?>
 
 <h1 class="display-4 text-center">Liste des produits</h1>
@@ -46,5 +46,5 @@ include __DIR__ . '/views/header.html.php';
 </table>
 
 <?php
-include __DIR__ . '/views/footer.html.php';
+include __DIR__ . '/footer.html.php';
 ?>
