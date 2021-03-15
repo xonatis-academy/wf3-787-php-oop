@@ -2,6 +2,10 @@
 
 define('DOSSIER_UPLOADS', 'uploads');
 
+/**
+ * Le ProduitValidator s'occupe de la conversion du payload
+ * en objet Produit
+ */
 class ProduitValidator {
 
     /**

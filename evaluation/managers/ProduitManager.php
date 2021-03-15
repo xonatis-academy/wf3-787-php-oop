@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Le ProduitManager s'occupe de la relation avec la
+ * base de données
+ */
 class ProduitManager {
 
     /**
