@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 include __DIR__.'/functions.php';
-include __DIR__.'/Produit.php';
+include __DIR__.'/models/Produit.php';
 
 if (!isset($_GET['id']))
 {
