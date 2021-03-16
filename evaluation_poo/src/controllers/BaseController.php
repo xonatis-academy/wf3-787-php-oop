@@ -3,6 +3,8 @@
 abstract class BaseController {
 
     protected function faireLaListeDesObjet(BaseManager $manager): array {
+        // Je demande au $manager de "récupérer tous les objets"
+        // et je mets le résultat dans $tableau
         $tableau = $manager->recupererTousLesObjets();
         return $tableau;
     }

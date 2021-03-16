@@ -16,6 +16,7 @@ define('DIR_MODELS', DIR_SRC . 'models/');
 define('DIR_VALIDATORS', DIR_SRC . 'validators/');
 
 spl_autoload_register(function($classe) {
+
     $dossiers = [DIR_CONTROLLERS, DIR_MANAGERS, DIR_MODELS, DIR_VALIDATORS];
     foreach($dossiers as $dossier) {
         $fichier = $dossier . $classe . '.php';
@@ -23,6 +24,7 @@ spl_autoload_register(function($classe) {
             include $fichier;
         }
     }
+    
 });
 
 ?>
