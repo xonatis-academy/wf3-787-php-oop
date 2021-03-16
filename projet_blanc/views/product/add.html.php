@@ -17,7 +17,7 @@ if ($messageErreur !== null)
 }
 ?>
 
-<form method="POST" action="add.php" class="p-5">
+<form method="POST" action="add-product.php" class="p-5">
     <div class="form-group">
         <label>Titre</label>
         <input type="text" name="product-title" class="form-control">

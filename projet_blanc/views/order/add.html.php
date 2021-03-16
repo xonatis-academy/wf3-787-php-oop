@@ -17,7 +17,7 @@ if ($messageErreur !== null)
 }
 ?>
 
-<form method="POST" action="add.php" class="p-5">
+<form method="POST" action="add-order.php" class="p-5">
     <div class="form-group">
         <label>Adresse de la commande</label>
         <input type="text" name="order-address" class="form-control">

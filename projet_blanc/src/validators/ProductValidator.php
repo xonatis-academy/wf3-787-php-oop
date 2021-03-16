@@ -4,7 +4,7 @@
  * Le ProduitValidator s'occupe de la conversion du payload
  * en objet Produit
  */
-class ProduitValidator extends BaseValidator {
+class ProductValidator extends BaseValidator {
 
     public function verifierPayload(): ?string
     {

@@ -17,7 +17,7 @@ if ($messageErreur !== null)
 }
 ?>
 
-<form method="POST" action="add.php" class="p-5">
+<form method="POST" action="add-category.php" class="p-5">
     <div class="form-group">
         <label>Nom de la catégorie</label>
         <input type="text" name="category-name" class="form-control">
