@@ -36,7 +36,7 @@ class ProduitManager extends BaseManager {
         return $produit;
     }
 
-    public function recupererTousLesObjets()
+    public function recupererTousLesObjets(): array
     {
         $tunnel = $this->creerConnection();
         $resultat = $tunnel->query('SELECT * FROM logement');
