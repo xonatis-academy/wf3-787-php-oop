@@ -1,12 +1,11 @@
 <?php
-    include __DIR__.'/../header.html.php';
+include __DIR__ . '/../header.html.php';
 ?>
 
 <h1 class="display-4 text-center">Gestion des produits</h1>
 
 <?php
-if ($messageErreur !== null) 
-{
+if ($messageErreur !== null) {
 ?>
 
     <div class="alert alert-danger" role="alert">
@@ -32,12 +31,22 @@ if ($messageErreur !== null)
     </div>
     <div class="form-group">
         <label>Categorie</label>
-        <input type="number" name="product-category" class="form-control">
+        <select name="product-category">
+            <?php
+            for ($i = 0; $i < count($tableauCategories); ++$i) {
+            ?>
+
+                <option value="<?php echo $tableauCategories[$i]->id ?>"><?php echo $tableauCategories[$i]->name ?></option>
+
+            <?php
+            }
+            ?>
+        </select>
     </div>
     <button name="btn-valider" type="submit" class="btn btn-primary">Ajouter le produit</button>
     <a href="index.php" class="btn btn-secondary">Retour a l'affichage</a>
 </form>
 
 <?php
-    include __DIR__.'/../footer.html.php';
+include __DIR__ . '/../footer.html.php';
 ?>
