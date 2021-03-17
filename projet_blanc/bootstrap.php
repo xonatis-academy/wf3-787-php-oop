@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 define('DOSSIER_UPLOADS', 'uploads');
-define('DB_NAME', 'eval');
+define('DB_NAME', 'wf3_php_projet');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DIR_VIEWS', __DIR__.'/views/');
