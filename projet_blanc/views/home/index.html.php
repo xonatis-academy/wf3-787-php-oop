@@ -78,12 +78,12 @@ include __DIR__ . '/../header.html.php';
             </tr>
 
             <?php
-            for ($i = 0; $i < count($tableauProducts); ++$i) {
+            for ($i = 0; $i < count($tableauCategories); ++$i) {
             ?>
 
                 <tr>
-                    <td><?php echo $tableauProducts[$i]->id ?></td>
-                    <td><?php echo $tableauProducts[$i]->name ?></td>
+                    <td><?php echo $tableauCategories[$i]->id ?></td>
+                    <td><?php echo $tableauCategories[$i]->name ?></td>
                 </tr>
 
             <?php
